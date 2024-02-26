@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Chart.Js</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -42,7 +42,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">LED</h4>
+                        <h4 class="card-title text-center">Distancia</h4>
                         <div class="row">
                             <div class="col-4 text-center">
                                 <img src="img/VERDE-OFF.svg" style="width: 50px; height: 50px;" alt="LED Off" class="img-fluid" id="led1">
@@ -57,6 +57,19 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title text-center">Respiracion</h4>
+                      <div class="row">
+                          <div class="col-4 text-center">
+                              <img src="img/fab1.png" style="position: relative; width: 200px; height: 200px; display: flex; align-items: center;" alt="LED Off" class="img-fluid" id="led6">
+                          </div>
+                                           
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>        
 
         <div class="row">
@@ -73,8 +86,8 @@
             <!-- Ajusta para columnas medianas -->
             <div class="card">
               <div class="card-body canvas-container">
-                <h4 class="card-title">Sensor de Temperatura</h4>
-                <canvas id="sensorTemperatura"></canvas>
+                <h4 class="card-title">Sensor Humo</h4>
+                <canvas id="sensorHumo"></canvas>
               </div>
             </div>
           </div>
@@ -97,5 +110,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="scriptHumo.js"></script>
+
   </body>
 </html>
