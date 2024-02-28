@@ -64,5 +64,5 @@ $(document).ready(function () {
   // Actualizar la gráfica cada cierto tiempo, por ejemplo, cada 5 segundos
   setInterval(function () {
     fetchData(); // Actualizar la gráfica de datos
-  }, 1000); // Ajustar el intervalo según sea necesario
+  }, 500); // Ajustar el intervalo según sea necesario
 });
