@@ -5,18 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Manejar mensajes recibidos del servidor
   websocket.onmessage = (event) => {
-    
     const message = event.data;
-    var datos = JSON.parse(message);
-    console.log("Status: "+datos.Status)
-
+    console.log("Mensaje recibido:", message);
     
     // Actualiza la interfaz de usuario según el estado del LED
     const toggleBtn = document.getElementById("toggleBtn");
 
-    if(datos.Status === "1") {
+    if(message === "1") {
       toggleBtn.checked = true;
-    } else if(datos.Status === "0") {
+    } else if(message === "0") {
       toggleBtn.checked = false;
     }
   };
